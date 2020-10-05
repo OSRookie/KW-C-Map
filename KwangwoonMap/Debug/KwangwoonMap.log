@@ -1,0 +1,44 @@
+﻿  Main.c
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(20,10): warning C4477: 'scanf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'char **'입니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(21,23): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(21,15): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(21,57): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(21,49): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(22,20): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(22,12): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(22,57): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(22,49): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(23,20): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(23,12): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(23,57): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(23,49): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(24,20): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(24,12): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(24,57): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(24,49): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(25,20): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(25,12): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(26,28): warning C4047: '함수': 'char *'의 간접 참조 수준이 'char *(*)[30]'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(26,19): warning C4024: 'rbuildingName': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(38,10): warning C4477: 'scanf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'char **'입니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(39,23): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(39,15): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(39,61): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(39,53): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(40,20): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(40,12): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(40,64): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(40,56): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(41,20): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(41,12): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(41,58): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(41,50): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(42,20): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(42,12): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(42,58): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(42,50): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(43,20): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(43,12): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(44,28): warning C4047: '함수': 'char *'의 간접 참조 수준이 'char *(*)[30]'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(44,19): warning C4024: 'lbuildingName': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+  KwangwoonMap.vcxproj -> D:\KW-C-Map\KW-C-Map\KwangwoonMap\Debug\KwangwoonMap.exe
