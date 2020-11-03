@@ -1,44 +1,32 @@
-﻿  Main.c
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(20,10): warning C4477: 'scanf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'char **'입니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(21,23): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(21,15): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(21,57): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(21,49): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(22,20): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(22,12): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(22,57): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(22,49): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(23,20): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(23,12): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(23,57): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(23,49): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(24,20): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(24,12): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(24,57): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(24,49): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(25,20): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(25,12): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(26,28): warning C4047: '함수': 'char *'의 간접 참조 수준이 'char *(*)[30]'과(와) 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(26,19): warning C4024: 'rbuildingName': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(38,10): warning C4477: 'scanf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'char **'입니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(39,23): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(39,15): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(39,61): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(39,53): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(40,20): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(40,12): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(40,64): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(40,56): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(41,20): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(41,12): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(41,58): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(41,50): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(42,20): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(42,12): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(42,58): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(42,50): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(43,20): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char *[30]'과(와) 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(43,12): warning C4024: 'strcmp': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(44,28): warning C4047: '함수': 'char *'의 간접 참조 수준이 'char *(*)[30]'과(와) 다릅니다.
-D:\KW-C-Map\KW-C-Map\KwangwoonMap\Main.c(44,19): warning C4024: 'lbuildingName': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+﻿  BuildingMap.c
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(27,26): warning C4244: '함수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(27,45): warning C4244: '함수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(158,34): warning C4028: 정식 매개 변수 1이(가) 선언과 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(158,34): warning C4028: 정식 매개 변수 2이(가) 선언과 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(160,28): warning C4028: 정식 매개 변수 1이(가) 선언과 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(160,28): warning C4028: 정식 매개 변수 2이(가) 선언과 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(162,25): warning C4047: '함수': 'int *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(162,23): warning C4024: '포인터를 통한 함수': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(162,29): warning C4047: '함수': 'int *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(162,27): warning C4024: '포인터를 통한 함수': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(166,25): warning C4047: '함수': 'int *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(166,23): warning C4024: '포인터를 통한 함수': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(151,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(173,4): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(189,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(195,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(201,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(207,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(213,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(219,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(224,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(232,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(238,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(244,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(250,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(256,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(262,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(268,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(274,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\KW-C-Map\KW-C-Map\KwangwoonMap\BuildingMap.c(280,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   KwangwoonMap.vcxproj -> D:\KW-C-Map\KW-C-Map\KwangwoonMap\Debug\KwangwoonMap.exe

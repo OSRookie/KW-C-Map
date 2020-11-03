@@ -14,3 +14,16 @@ void lbuildingName(char *bName);	//광운대 왼쪽 지도
 void rbuildingName(char *bName);	//광운대 오른쪽 지도
 void leftBuilding();	//광운대 왼쪽 건물
 void rightBuilding();	//광운대 오른쪽 건물
+void lineGroup(int x, int y);//
+void arrOffice(int a,int b,int c,int d, char name[]);
+struct Floor {
+	void (*clear)();
+	void (*lineGroup)(int* a, int* b);
+	void(*arrOffice)();
+	void (*gotoxy)(int* x,int* y);
+};
+struct Building
+{
+	char name[10];
+	struct Floor;
+};
