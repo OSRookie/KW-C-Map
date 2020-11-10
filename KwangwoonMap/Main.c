@@ -44,7 +44,7 @@ int main() {
 				continue;
 			}
 			else {
-				printf("광운대 왠쪽에 이건물 없습니다.\n");
+				printf("광운대 왼쪽에 이건물 없습니다.\n");
 				continue;
 			}
 		}
