@@ -29,7 +29,7 @@ void printBuilding(int w, int h, char name[]) {
 	line(-w, 0);
 	line(0, -h);
 
-	gotoxy(tmpXY.X +1 , tmpXY.Y + 0.5 * h);
+	gotoxy(tmpXY.X +0.5 *w , tmpXY.Y + 0.5 * h);
 	printf("%s", name);
 }
 
@@ -161,9 +161,10 @@ void leftBuilding() {
 }
 void rbuildingName(char *bName) {
 
-	if (strcmp(bName, "비마관")==0) {
+	if (strcmp(bName, "비마관") == 0) {
 		/*각건물의 내부 구조 보여주기*/
 		/*각 건물 특색 출력하기*/
+
 		printf("건물 몇층을 보고 싶습니까?(종료:0)");
 		scanf("%d", &floor);
 		struct Floor* floor1;
@@ -177,10 +178,192 @@ void rbuildingName(char *bName) {
 				floor1->gotoxy = gotoxy;
 				floor1->clear();
 				floor1->lineGroup(80, 25);
+				floor1->arrOffice(2, 1, 23, 5, "광운영상센터");
 				floor1->arrOffice(50, 1, 10, 10, "계단");
 				floor1->arrOffice(30, 1, 18, 6, "인쇄소");
-				floor1->arrOffice(2, 10, 25, 6, "교수학습센터");
+				floor1->arrOffice(2, 10, 15, 13, "연구센터");
 				floor1->gotoxy(0, 26);
+				printf("특징: 기자재, 세미나실을 영상센터에서 대여할수 있다.\n\n");
+				break;
+			case 2:
+				floor1 = (struct Floor*)malloc(sizeof(struct Floor));
+				floor1->clear = clear;
+				floor1->lineGroup = lineGroup;
+				floor1->arrOffice = arrOffice;
+				floor1->gotoxy = gotoxy;
+				floor1->clear();
+				floor1->lineGroup(80, 25);
+				floor1->arrOffice(1, 2, 16, 18, "국방센터");
+				floor1->arrOffice(20, 2, 25, 3, "개방형 실습실");
+				floor1->arrOffice(48, 2, 18, 3, "해동학술");
+				floor1->arrOffice(58, 4, 0, 0, "정보실");
+				floor1->arrOffice(30, 10, 40, 10, "로비");
+				floor1->arrOffice(65, 21, 10, 2, "계단");
+				floor1->gotoxy(0, 26);
+				printf("특징\n");
+				printf("1. 전정대 학생들을 위한 개방형 실습실이 있다.(202호)\n");
+				printf("2. 로비 책상들이 많이 있고 사람이 없어 자습하기 좋은 환경이다.\n\n");
+				break;
+			case 3:
+				floor1 = (struct Floor*)malloc(sizeof(struct Floor));
+				floor1->clear = clear;
+				floor1->lineGroup = lineGroup;
+				floor1->arrOffice = arrOffice;
+				floor1->gotoxy = gotoxy;
+				floor1->clear();
+				floor1->lineGroup(120, 40);
+				floor1->arrOffice(3, 1, 7, 3, "출구");
+				floor1->arrOffice(12, 1, 7, 3, "계단");
+				floor1->arrOffice(12, 6, 20, 5, "공과대");
+				floor1->arrOffice(22, 9, 0, 0, "교학팀");
+				floor1->arrOffice(12, 13, 15, 4, "세미나실");
+				floor1->arrOffice(12, 18, 15, 4, "여휴개실");
+				floor1->arrOffice(12, 24, 15, 4, "경비실");
+				floor1->arrOffice(28, 1, 7, 3, "출구");
+				floor1->arrOffice(3, 20, 7, 3, "학생");
+				floor1->arrOffice(6, 22, 0, 0, "회실");
+				floor1->arrOffice(38, 1, 15, 5, "전정대");
+				floor1->arrOffice(44, 4, 0, 0, "교학팀");
+				floor1->arrOffice(38, 7, 15, 3, "학장실");
+				floor1->arrOffice(38, 11, 15, 3, "315호");
+				floor1->arrOffice(38, 16, 15, 3, "환경공학과");
+				floor1->arrOffice(45, 18, 0, 0, "실험실");
+				floor1->arrOffice(56, 15, 13, 10, "환경");
+				floor1->arrOffice(61, 21, 0, 0, "공학과");
+				floor1->arrOffice(61, 22, 0, 0, "교수실");
+				floor1->arrOffice(32, 22, 7, 3, "ele");
+				floor1->arrOffice(42, 21, 7, 3, "남화");
+				floor1->arrOffice(38, 26, 7, 3, "계단");
+				floor1->arrOffice(38, 30, 13, 5, "화공");
+				floor1->arrOffice(43, 33, 0, 0, "실험실");
+				floor1->arrOffice(53, 30, 7, 2, "여화");
+				floor1->arrOffice(53, 34, 13, 3, "화학기초");
+				floor1->arrOffice(58, 36, 0, 0, "실험실");
+				floor1->arrOffice(69, 34, 13, 3, "화학공정");
+				floor1->arrOffice(74, 36, 0, 0, "실험실");
+				floor1->arrOffice(85, 34, 7, 3, "강의실");
+				floor1->arrOffice(95, 34, 15, 3, "환경대");
+				floor1->arrOffice(100, 36, 0, 0, "교학팀");
+				floor1->gotoxy(0, 41);
+				printf("특징\n");
+				printf("1. 전정대 학생회실이 있다.\n");
+				printf("2. 3층은 넓어서 강의실 찾기가 어렵다..\n");
+				printf("3. 공과대, 전정대 교학팀이 있다..\n\n");
+				break;
+			case 4:
+				floor1 = (struct Floor*)malloc(sizeof(struct Floor));
+				floor1->clear = clear;
+				floor1->lineGroup = lineGroup;
+				floor1->arrOffice = arrOffice;
+				floor1->gotoxy = gotoxy;
+				floor1->clear();
+				floor1->lineGroup(85, 25);
+				floor1->arrOffice(5, 1, 12, 7, "401~");
+				floor1->arrOffice(10, 5, 0, 0, "405호");
+				floor1->arrOffice(19, 1, 13, 3, "실험실");
+				floor1->arrOffice(19, 5, 30, 3, "429~427호");
+				floor1->arrOffice(35, 9, 15, 3, "교수님실");
+				floor1->arrOffice(52, 9, 15, 3, "학과");
+				floor1->arrOffice(58, 11, 0, 0, "사무실");
+				floor1->arrOffice(70, 9, 7, 3, "계단");
+				floor1->arrOffice(52, 5, 7, 3, "계단");
+				floor1->arrOffice(5, 9, 7, 3, "여화");
+				floor1->arrOffice(5, 13, 13, 3, "409호");
+				floor1->arrOffice(5, 17, 15, 5, "교수님실");
+				floor1->arrOffice(25, 17, 7, 3, "계단");
+				floor1->arrOffice(36, 17, 15, 3, "전자재료");
+				floor1->arrOffice(43, 19, 0, 0, "실험실");
+				floor1->arrOffice(54, 17, 20, 3, "419~421호");
+				floor1->arrOffice(30, 21, 25, 3, "교수님실");
+				floor1->arrOffice(42, 23, 0, 0, "연구실");
+				floor1->gotoxy(0, 26);
+				printf("특징\n");
+				printf("1. 전자융합과,재료공학과 교수님실이 있다.\n\n");
+				break;
+			case 5:
+				floor1 = (struct Floor*)malloc(sizeof(struct Floor));
+				floor1->clear = clear;
+				floor1->lineGroup = lineGroup;
+				floor1->arrOffice = arrOffice;
+				floor1->gotoxy = gotoxy;
+				floor1->clear();
+				floor1->lineGroup(85, 20);
+				floor1->arrOffice(3, 2, 15, 4, "519호");
+				floor1->arrOffice(10, 5, 0, 0, "520호");
+				floor1->arrOffice(21, 2, 15, 3, "502호");
+				floor1->arrOffice(28, 4, 0, 0, "501호");
+				floor1->arrOffice(39, 2, 13, 3, "컴공");
+				floor1->arrOffice(44, 4, 0, 0, "실습실");
+				floor1->arrOffice(55, 2, 13, 3, "강의실");
+				floor1->arrOffice(3, 7, 13, 3, "전통");
+				floor1->arrOffice(8, 9, 0, 0, "실험실");
+				floor1->arrOffice(19, 7, 7, 3, "여화");
+				floor1->arrOffice(29, 7, 7, 3, "계단");
+				floor1->arrOffice(47, 7, 7, 3, "504호");
+				floor1->arrOffice(47, 13, 10, 3, "517호");
+				floor1->arrOffice(65, 13, 15, 3, "세미나실");
+				floor1->arrOffice(38, 6, 7, 2, "ele");
+				floor1->arrOffice(56, 6, 10, 4, "화공");
+				floor1->arrOffice(59, 9, 0, 0, "교수실");
+				floor1->arrOffice(68, 6, 12, 4, "실험실");
+				floor1->arrOffice(38, 9, 7, 2, "남화");
+				floor1->arrOffice(3, 11, 15, 5, "교수실");
+				floor1->arrOffice(10, 14, 0, 0, "연구실");
+
+				floor1->gotoxy(0, 21);
+				printf("특징\n");
+				printf("1. 전통과, 화공과,생명공학과 실험실 있다.\n");
+				printf("2. 502,501,514,513 호는 컴퓨터 강의실 \n");
+				printf("2. 전융과 사물함이 있다. \n");
+				break;
+			case 6:
+				floor1 = (struct Floor*)malloc(sizeof(struct Floor));
+				floor1->clear = clear;
+				floor1->lineGroup = lineGroup;
+				floor1->arrOffice = arrOffice;
+				floor1->gotoxy = gotoxy;
+				floor1->clear();
+				floor1->lineGroup(70, 20);
+				floor1->arrOffice(10, 2, 15, 5, "실험실");
+				floor1->arrOffice(28, 2, 25, 5, "교수실");
+				floor1->arrOffice(40, 5, 0, 0, "연구실");
+				floor1->arrOffice(10, 8, 15, 5, "사무실");
+				floor1->arrOffice(50, 8, 10, 3, "계단");
+				floor1->arrOffice(4, 14, 10, 3, "여화");
+				floor1->arrOffice(16, 14, 10, 3, "계단");
+				floor1->arrOffice(28, 14, 10, 3, "ele");
+				floor1->arrOffice(40, 14, 15, 5, "교수실");
+				floor1->arrOffice(57, 14, 10, 3, "617호");
+				floor1->arrOffice(62, 16, 0, 0, "618호");
+				floor1->gotoxy(0, 21);
+				printf("특징\n");
+				printf("1. 전자과 사물함이 있다.\n");
+				printf("2. 전자과 교수실, 연구실이 있다..\n");
+				printf("3. 617호 618호가 건물 밖에 있다.(잘 찾기)\n\n");
+				break;
+			case 7:
+				floor1 = (struct Floor*)malloc(sizeof(struct Floor));
+				floor1->clear = clear;
+				floor1->lineGroup = lineGroup;
+				floor1->arrOffice = arrOffice;
+				floor1->gotoxy = gotoxy;
+				floor1->clear();
+				floor1->lineGroup(70, 20);
+				floor1->arrOffice(10, 2, 15, 5, "실험실");
+				floor1->arrOffice(28, 2, 25, 5, "교수실");
+				floor1->arrOffice(40, 5, 0, 0, "연구실");
+				floor1->arrOffice(56, 2, 10, 3, "714호");
+				floor1->arrOffice(10, 8, 15, 5, "사무실");
+				floor1->arrOffice(50, 8, 10, 3, "계단");
+				floor1->arrOffice(4, 14, 10, 3, "여화");
+				floor1->arrOffice(16, 14, 10, 3, "계단");
+				floor1->arrOffice(28, 14, 10, 3, "ele");
+				floor1->arrOffice(40, 14, 13, 3, "실험실");
+				floor1->arrOffice(55, 12, 13, 5, "교수실");
+				floor1->gotoxy(0, 21);
+				printf("특징\n");
+				printf("1. 전통과 실험실,사물함이 있다.\n");
+				printf("2. 전통과 교수실, 연구실이 있다..\n");
 				break;
 			default:
 				printf("이 층에 대한 구조 계획이 없습니다.\n");

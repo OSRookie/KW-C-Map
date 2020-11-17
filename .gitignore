@@ -5,3 +5,6 @@ Debug/
 *.sdf  
 *.opensdf  
 *.vcxproj.user
+*.tlog
+*.pdb
+*.idb
