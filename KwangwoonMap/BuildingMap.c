@@ -3,6 +3,7 @@
 void line();
 int floor;
 
+<<<<<<< HEAD
 COORD getXY() {
 	COORD Cur;
 	CONSOLE_SCREEN_BUFFER_INFO a;
@@ -99,6 +100,8 @@ void clear() {
 void fullMap() {
 	printf("광운대 전체 지도");
 }
+=======
+>>>>>>> d789e6ace1e26b27f93cef6bb97e97f2da11c7b2
 void rightBuilding() {
 	printf(" 광운대 오른쪽 지도 입니다.\n\n");
 	printf("          *--------------*");   printf("\t*----------*");		printf("\t     *-------*\n");
@@ -428,7 +431,7 @@ void lbuildingName(char *bName) {
 	if (!strcmp(bName, "연구관")) {
 		/*각건물의 내부 구조 보여주기*/
 		/*각 건물 특색 출력하기*/
-		printf("건물 몇층을 보고 싶습니까?");
+		printf("건물 몇층을 보고 싶습니까?(-2 ~ 10 (0은뒤로가기))");
 		scanf("%d", &floor);
 		struct Floor* floorB2, * floorB1, * floor1, * floor2, * floor3, * floor4, * floor5, * floor6, * floor7, * floor8, * floor9, * floor10;
 		while (floor != 0) {

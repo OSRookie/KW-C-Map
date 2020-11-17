@@ -16,6 +16,7 @@ void leftBuilding();	//광운대 왼쪽 건물
 void rightBuilding();	//광운대 오른쪽 건물
 void lineGroup(int x, int y);//
 void arrOffice(int a,int b,int c,int d, char name[]);
+
 struct Floor {
 	void (*clear)();
 	void (*lineGroup)(int* a, int* b);
