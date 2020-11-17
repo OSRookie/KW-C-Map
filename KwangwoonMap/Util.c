@@ -27,7 +27,7 @@ void printBuilding(int w, int h, char name[]) {
 	line(-w, 0);
 	line(0, -h);
 
-	gotoxy(tmpXY.X + 1, tmpXY.Y + 0.5 * h);
+	gotoxy(tmpXY.X + 0.5*w, tmpXY.Y + 0.5 * h);
 	printf("%s", name);
 }
 
