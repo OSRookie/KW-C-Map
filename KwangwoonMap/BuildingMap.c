@@ -148,8 +148,7 @@ void lbuildingName(char *bName) {
 	if (!strcmp(bName, "연구관")) {
 		/*각건물의 내부 구조 보여주기*/
 		/*각 건물 특색 출력하기*/
-		printf("지하 2층 ~ 지상 10층 까지 있습니다.\n");
-		printf("건물 몇층을 보고 싶습니까?");
+		printf("건물 몇층을 보고 싶습니까?(-2 ~ 10 (0은뒤로가기))");
 		scanf("%d", &floor);
 		struct Floor* floorB2, * floorB1, * floor1, * floor2, * floor3, * floor4, * floor5, * floor6, * floor7, * floor8, * floor9, * floor10;
 		while (floor != 0) {
