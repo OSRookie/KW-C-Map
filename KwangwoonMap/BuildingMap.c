@@ -337,16 +337,81 @@ void rbuildingName(char *bName) {
 				break;
 			case 4:
 				clear();
-				lineGroup(94, 20);
+				lineGroup(118, 20);
+				printOffice(10, 1, "계단");
+				printOffice(60, 1, "계단");
+				printOffice(70, 2, "화장실");
+				printOffice(5, 4, "극예술연구회");
+				printOffice(5, 7, "연촌문학회");
+				printOffice(5, 10, "Com's");
+				printOffice(5, 13, "영자신문사");
+				printOffice(5, 16, "신문사");
+				printOffice_br(22, 4,3, "반도체 (SELLA)");
+				printOffice(35, 4, "DO-WITH");
+				printOffice_br(48, 4,3, "로보트연구회");
+				printOffice_br(48, 8, 2, "아마수영반");
+				printOffice(82, 1, "전자연구회");
+				printOffice(82, 4, "네비게이토");
+				printOffice(82, 7, "Dakapo");
+				printOffice(82, 10, "기우회");
+				printOffice(82, 13, "BlackSun");
+				printOffice(82, 16, "아마사진반");
+				printOffice(100, 4, "PhoeBus");
+				printOffice(100, 7, "Trick");
+				printOffice(100, 10, "아마농구반");
+				printOffice(100, 13, "문학동우회");
+				printOffice(100, 16, "호신술");
 				gotoxy(0, 21);
 				printf("특징\n");
+				printf("동아리방이 모여있음\n");
 				break;
 			case 5:
-				clear();
-				lineGroup(94, 20);
-				gotoxy(0, 21);
-				printf("특징\n");
-				break;
+				printf("좌측(1),우측(2) : ");
+				int isLeft;
+				scanf("%d", &isLeft);
+				if (isLeft == 1) {
+					clear();
+					lineGroup(90, 20);
+					printOffice_br(2, 1,2, "아마스키반");
+					printOffice_br(14, 1, 2, "발표생활");
+					printOffice(25, 1, "Time");
+					printOffice(36, 1, "유스호스텔");
+					printOffice_br(53, 1, 3, "적십자학생회");
+					printOffice(70, 1, "계단");
+					printOffice(70, 14, "쿠스");
+					printOffice(50, 14, "세상사람들");
+					printOffice(34, 14, "아마유도반");
+					printOffice(20, 14, "BlackCat");
+					printOffice(4, 14, "사회봉사단");
+					gotoxy(0, 21);
+					printf("특징\n");
+					break;
+				}
+				else if(isLeft==2) {
+					clear();
+					lineGroup(110, 20);
+					printOffice(2, 1, "계단");
+					printOffice(12, 1, "F.O.V.U");
+					printOffice_br(25, 1, 4, "네트워크연구회(K-net)");
+					printOffice(44, 1, "여섯소리");
+					printOffice_br(60, 1, 2, "국궁동아리");
+					printOffice(71, 1, "C-Spot");
+					printOffice(84, 1, "IVF");
+					printOffice_br(94, 1,3, "아이콘유니콘스");
+					printOffice_br(2, 14,3, "미화원휴게실");
+					printOffice(15, 14, "C.C.C");
+					printOffice(27, 14, "CIA");
+					printOffice_br(38, 14, 3,"카톨릭학생회");
+					printOffice(52, 14, "호우회");
+					printOffice(64, 14, "14Fret");
+					printOffice(78, 14, "노을");
+
+
+					
+					gotoxy(0, 21);
+					printf("특징\n");
+					break;
+				}
 			default:
 				printf("이 층에 대한 구조 계획이 없습니다.\n");
 				break;
