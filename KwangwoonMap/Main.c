@@ -2,8 +2,9 @@
 #include "Methods.h"
 
 int main() {
-
-	char *building[30];
+	rbuildingName("화도관");
+	return 0;
+	/*char *building[30];
 	int side;
 	while (1) {
 		printf("광운로를 기준으로 오른쪽지도를 보고싶으면 1번 왼쪽 지도를 보고 싶으면 2번을 입력하세요. (종료-1)");
@@ -53,5 +54,5 @@ int main() {
 			continue;
 		}
 	}
-	return 0;
+	return 0;*/
 }

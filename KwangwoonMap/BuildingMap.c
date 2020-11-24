@@ -288,26 +288,485 @@ void rbuildingName(char *bName) {
 	if (strcmp(bName, "복지관")==0) {
 		/*각건물의 내부 구조 보여주기*/
 		/*각 건물 특색 출력하기*/
-		printf("건물 몇층을 보고 싶습니까?");
+
+		printf("건물 몇층을 보고 싶습니까? (1 ~ 5) (종료:0)");
 		scanf("%d", &floor);
+		struct Floor* floor1;
+		while (floor != 0) {
+			switch (floor) {
+			case 1:
+				clear();
+				lineGroup(60, 20);
+				arrOffice(7, 1, 10, 3, "계단");
+				arrOffice(35, 1, 10, 3, "계단");
+				arrOffice(2, 12, 18, 3, "아마테니스");
+				arrOffice(35, 12, 18, 3, "아마볼링반");
+				gotoxy(0, 21);
+				printf("특징\n");
+				break;
+			case 2:
+				clear();
+				lineGroup(90, 20);
+				arrOffice(2, 1, 10, 3, "계단");
+				arrOffice(2, 10, 18, 5, "학생복지팀");
+				arrOffice(4, 5, 10, 3, "보건실");
+				arrOffice(15, 6, 20, 3, "ATM(국민,우체국)");
+				arrOffice(20, 1, 15, 3, "학생상담센터");
+				arrOffice(37, 1, 10, 3, "계단");
+				arrOffice(56, 1, 12, 3, "화장실");
+				arrOffice(66, 6, 18, 3, "인재개발원");
+				gotoxy(0, 21);
+				printf("특징\n");
+				printf("보건실이 있다.\n");
+				printf("국민,우체국 ATM 이 있다.\n");
+				break;
+			case 3:
+				clear();
+				lineGroup(90, 15);
+				printOffice(3, 2, "총학생회실");
+				printOffice(3, 10, "응원단");
+				printOffice(20, 2, "남휴게실");
+				printOffice(40, 1, "계단");
+				printOffice_br(50, 1, 3, "총동연세미나실");
+				printOffice(65, 1, "계단");
+				printOffice(75, 1, "함지마루");
+				gotoxy(0, 16);
+				printf("특징\n");
+				printf("남학생 휴게실이 있다.\n");
+				printf("함지마루 : 학교구내식당 \n");
+				break;
+			case 4:
+				clear();
+				lineGroup(94, 20);
+				gotoxy(0, 21);
+				printf("특징\n");
+				break;
+			case 5:
+				clear();
+				lineGroup(94, 20);
+				gotoxy(0, 21);
+				printf("특징\n");
+				break;
+			default:
+				printf("이 층에 대한 구조 계획이 없습니다.\n");
+				break;
+			}
+			printf("건물 몇층을 보고 싶습니까?(종료:0)");
+			scanf("%d", &floor);
+		}
 	}
-	if (strcmp(bName, "80주년기념관")==0) {
+	if (strcmp(bName, "80주년기념관")==0 || strcmp(bName, "도서관") == 0) {
 		/*각건물의 내부 구조 보여주기*/
-		/*각 건물 특색 출력하기*/
-		printf("건물 몇층을 보고 싶습니까?");
+		/*각 건물 특색 출력하기*/\
+		printf("건물 몇층을 보고 싶습니까? (-1 ~ 4) (종료:0)");
 		scanf("%d", &floor);
+		while (floor != 0) {
+			switch (floor) {
+			case -1:
+				clear();
+				lineGroup(110, 20);
+				printOffice(2, 15, "입구");
+				printOffice(20, 12, "로비");
+				arrOffice(20, 2, 40 ,5,"인문과학자료실");
+				printOffice(65, 10, "계단"); 
+				printOffice(45, 11, "무인발급기");
+				printOffice(65, 15, "제2자유열람실");
+				printOffice(85, 15, "제1자유열람실");
+				printOffice(95, 2, "ELV");
+				printOffice(95, 6, "화장실");
+				gotoxy(0, 21);
+				printf("특징\n");
+				printf("무인발급기(졸업증명서,기타 학교관련서류)\n");
+				printf("제1자유열람실 : 노트북 사용전용\n");
+				printf("제2자유열람실이 있다.\n");
+				break;
+			case 1:
+				clear();
+				lineGroup(110, 20);
+				printOffice(45, 17, "입구");
+				arrOffice(30, 2, 40, 5, "자연과학자료실");
+				arrOffice(2, 15, 25, 4, "오픈열람실");
+				printOffice(2, 2, "제3자유열람실");
+				printOffice(75, 12, "계단");
+				printOffice_br(88, 15,3, "집현전 (그룹스터디룸)");
+				printOffice(95, 2, "ELV");
+				printOffice(95, 6, "화장실");
+				gotoxy(0, 21);
+				printf("특징\n");
+				printf("집현전 : 그룹스터디룸으로 예약후 이용가능\n");
+				printf("오픈열람실 : 개방적인곳으로 팀플하기 좋음\n");
+				break;
+			case 2:
+				clear();
+				lineGroup(90, 20);
+				printOffice(2, 17, "입구");
+				printOffice(2, 2, "로비");
+				printOffice(12, 17, "ELV");
+				printOffice(10, 14, "계단");
+				printOffice(20, 14, "화장실");
+				arrOffice(20, 8, 40, 4, "회의실");
+				printOffice(75, 12, "계단");
+				gotoxy(0, 21);
+				printf("특징\n");
+				printf("회의실,세미나실(주로 특강,상담시 이용)있음\n");
+				break;
+			case 3:
+				clear();
+				lineGroup(90, 20);
+				arrOffice(20, 2, 40, 4, "강의실");
+				printOffice(2, 17, "세미나실");
+				printOffice(13, 17, "ELV");
+				printOffice(12, 13, "계단");
+				printOffice(25, 13, "화장실");
+				arrOffice(40, 13, 30, 4, "강의실");
+				printOffice(75, 12, "계단");
+				gotoxy(0, 21);
+				printf("특징\n");
+				printf("회의실,세미나실(주로 특강,상담시 이용)있음\n");
+				break;
+			case 4:
+				clear();
+				lineGroup(90, 20);
+				printOffice(13, 2, "문서보관실");
+				printOffice_br(34, 2,4, "중소기업산학협력단");
+				printOffice(55, 2, "창업교육센터");
+				printOffice(8, 17, "ELV");
+				printOffice(8, 13, "계단");
+				printOffice(20, 13, "화장실");
+				printOffice(32, 13, "산학사업팀");
+				printOffice(50, 13, "경영관리팀");
+				printOffice(70, 13, "연구지원팀");
+				printOffice(80, 16, "계단");
+				printOffice(75, 2, "휴게실");
+				gotoxy(0, 21);
+				printf("특징\n");
+				printf("학교 사무실\n");
+				printf("중소기업산학협력단 : 3d프린터 사용 가능\n");
+				break;
+			default:
+				printf("이 층에 대한 구조 계획이 없습니다.\n");
+				break;
+			}
+			printf("건물 몇층을 보고 싶습니까? (-1 ~ 4) (종료:0)");
+			scanf("%d", &floor);
+		}
 	}
 	if (strcmp(bName, "화도관")==0) {
 		/*각건물의 내부 구조 보여주기*/
 		/*각 건물 특색 출력하기*/
-		printf("건물 몇층을 보고 싶습니까?");
+		printf("건물 몇층을 보고 싶습니까? (1 ~ 6) (종료:0)");
 		scanf("%d", &floor);
+		while (floor != 0) {
+			switch (floor) {
+			case 1:
+				clear();
+				lineGroup(110, 20);
+				printOffice(2, 2, "계단");
+				printOffice(11, 2, "ELV");
+				printOffice(22, 2, "107");
+				printOffice(32, 2, "여화장실");
+				printOffice(70, 2, "112");
+				printOffice(90, 2, "ELV");
+				printOffice(100, 2, "계단");
+				printOffice_br(90, 5,2, "ATM 신한");
+				printOffice_br(90, 9, 5, "무인증명서발급기");
+				printOffice(100, 17, "입구");
+				printOffice(90, 14, "117");
+				printOffice(80, 14, "계단");
+				printOffice(65, 14, "여화장실");
+				printOffice(55, 14, "109");
+				printOffice(44, 14, "101");
+				printOffice(43, 17, "입구");
+				printOffice(33, 14, "102");
+				printOffice(23, 14, "104");
+				printOffice_br(13, 10, 2, "ATM 우리,하나,국민");
+				printOffice(2, 14, "106");
+				printOffice(2, 17, "입구");
+				gotoxy(0, 21);
+				printf("특징\n");
+				printf("ATM 은행별로 있음\n");
+				printf("학교 관련 서류업무 보는곳(입학처,총무처,교무처) 있음\n");
+				printf("무인증명서 발급기(재학증명서,졸업증명서)\n");
+				printf("\n");
+				break;
+			case 2:
+				clear();
+				lineGroup(110, 20);
+				printOffice(2, 2, "계단");
+				printOffice(11, 2, "ELV");
+				printOffice(22, 2, "207");
+				printOffice(32, 2, "208");
+				printOffice(42, 2, "남화장실");
+				printOffice(56, 2, "209");
+				printOffice(66, 2, "210");
+				printOffice(76, 2, "여화장실");
+				printOffice(95, 2, "202");
+				printOffice(95, 6, "총장실");
+				printOffice(2, 14, "206");
+				printOffice(12, 14, "204");
+				printOffice(22, 14, "203");
+				printOffice(32, 14, "계단");
+				printOffice(45, 14, "202");
+				printOffice(55, 14, "213");
+				printOffice(65, 14, "계단");
+				printOffice(80, 14, "211");
+				gotoxy(0, 21);
+				printf("특징\n");
+				break;
+			case 3:
+				clear();
+				lineGroup(110, 20);
+				printOffice(2, 2, "계단");
+				printOffice(11, 2, "ELV");
+				printOffice(22, 2, "305~306");
+				printOffice(35, 2, "남화장실");
+				printOffice(49, 2, "307~308");
+				printOffice(65, 2, "여화장실");
+				printOffice(79, 2, "309~310");
+				printOffice(92, 2, "ELV");
+				printOffice(101, 2, "계단");
+				printOffice(2, 10, "304");
+				printOffice(2, 14, "303");
+				printOffice(12, 14, "302");
+				printOffice(22, 14, "301");
+				printOffice(32, 14, "계단");
+				printOffice(42, 14, "316");
+				printOffice(52, 14, "315");
+				printOffice(62, 14, "계단");
+				printOffice(72, 14, "314");
+				printOffice(82, 14, "313");
+				printOffice(92, 14, "311");
+				gotoxy(0, 21);
+				printf("특징\n");
+				break;
+			case 4:
+				clear();
+				lineGroup(110, 20);
+				arrOffice(2, 2, 25, 14, "스튜디오");
+				printOffice(35, 2, "남화장실");
+				printOffice(49, 2, "405~406");
+				printOffice(65, 2, "여화장실");
+				printOffice(79, 2, "409~410");
+				printOffice(92, 2, "ELV");
+				printOffice(101, 2, "계단");
+				printOffice(32, 14, "계단");
+				printOffice(42, 14, "416");
+				printOffice(52, 14, "415");
+				printOffice(62, 14, "계단");
+				printOffice(72, 14, "414");
+				printOffice(82, 14, "413");
+				printOffice(92, 14, "411");
+				gotoxy(0, 21);
+				printf("특징\n");
+				printf("건축학과 관련층\n");
+				printf("건축학과 스튜디오,실습실\n");
+				break;
+			case 5:
+				clear();
+				lineGroup(110, 20);
+				printOffice(2, 2, "계단");
+				printOffice(12, 2, "ELV");
+				printOffice(21, 2, "509~510");
+				printOffice(34, 2, "513");
+				printOffice(43, 2, "남화장실");
+				printOffice(55, 2, "514~515");
+				printOffice(68, 2, "여화장실");
+				printOffice(81, 2, "518~519");
+				printOffice(92, 2, "ELV");
+				printOffice(101, 2, "계단");
+				printOffice(2, 14, "508");
+				printOffice(12, 14, "507");
+				printOffice(22, 14, "503~504");
+				printOffice(35, 14, "506");
+				printOffice(44, 14, "502");
+				printOffice(53, 14, "계단");
+				printOffice(63, 14, "이사장실");
+				printOffice(77, 14, "계단");
+				printOffice(90, 14, "520");
+				gotoxy(0, 21);
+				printf("특징\n");
+				printf("교수님 연구실\n");
+				break;
+			case 6:
+				clear();
+				lineGroup(110, 20);
+				printOffice(2, 2, "계단");
+				printOffice(12, 2, "ELV");
+				printOffice(21, 2, "612");
+				printOffice(31, 2, "남화장실");
+				printOffice(44, 2, "614");
+				printOffice(53, 2, "615~619");
+				printOffice(67, 2, "여화장실");
+				printOffice(81, 2, "620~624");
+				printOffice(92, 2, "ELV");
+				printOffice(101, 2, "계단");
+				printOffice(2, 14, "608");
+				printOffice(12, 14, "607");
+				printOffice(22, 14, "603~604");
+				printOffice(35, 14, "606");
+				printOffice(44, 14, "602");
+				printOffice(53, 14, "계단");
+				printOffice(63, 14, "632");
+				printOffice(77, 14, "계단");
+				printOffice(90, 14, "627");
+				printOffice(100, 14, "625");
+				gotoxy(0, 21);
+				printf("특징\n");
+				printf("교수님 연구실\n");
+				break;
+			default:
+				printf("이 층에 대한 구조 계획이 없습니다.\n");
+				break;
+			}
+			printf("건물 몇층을 보고 싶습니까? (1 ~ 6) (종료:0)");
+			scanf("%d", &floor);
+		}
 	}
 	if (strcmp(bName, "옥의관")==0) {
 		/*각건물의 내부 구조 보여주기*/
 		/*각 건물 특색 출력하기*/
-		printf("건물 몇층을 보고 싶습니까?");
+		printf("건물 몇층을 보고 싶습니까? (1 ~ 8) (종료:0)");
 		scanf("%d", &floor);
+		struct Floor* floor1;
+		while (floor != 0) {
+			switch (floor) {
+				case 1:
+					clear();
+					lineGroup(90, 20);
+					arrOffice(2, 4, 15, 3, "휴게공간");
+					arrOffice(1, 10, 12, 3, "화장실남");
+					arrOffice(3, 16, 10, 3, "계단");
+					arrOffice(70, 16, 15, 3, "103");
+					arrOffice(50, 16, 15, 3, "102");
+					arrOffice(32, 16, 15, 3, "101");
+					arrOffice(66, 4, 10, 3, "계단");
+					arrOffice(20, 16, 8, 3, "엘베");
+					gotoxy(0, 21);
+					printf("특징\n");
+					printf("휴게공간:테이블,복사기(유료),자판기\n");
+					break;
+				case 2:
+					clear();
+					lineGroup(90, 20);
+					arrOffice(3, 2, 8, 3, "엘베");
+					arrOffice(1, 15, 11, 3, "화장실여");
+					arrOffice(15, 3, 10, 3, "207");
+					arrOffice(28, 3, 10, 3, "208");
+					arrOffice(31, 3, 10, 3, "209");
+					arrOffice(44, 3, 10, 3, "210");
+					arrOffice(57, 3, 10, 3, "211");
+					arrOffice(71, 18, 8, 3, "계단");
+					arrOffice(57, 15, 10, 3, "201");
+					arrOffice(44, 15, 10, 3, "203");
+					arrOffice(31, 15, 10, 3, "204");
+					arrOffice(28, 15, 10, 3, "205");
+					arrOffice(15, 15, 10, 3, "206");
+					gotoxy(0, 21);
+					printf("특징\n");
+					printf("자연대 수업공간\n");
+					break;
+				case 3:
+					clear();
+					lineGroup(90, 20);
+					arrOffice(3, 2, 8, 3, "엘베");
+					arrOffice(2, 8, 11, 3, "화장실남");
+					arrOffice(3, 15, 10, 3, "계단");
+					arrOffice(16, 8, 10, 3, "309");
+					arrOffice(41, 15, 10, 3, "303");
+					arrOffice(54, 15, 10, 3, "302");
+					arrOffice(67, 15, 10, 3, "301");
+					arrOffice(70, 3, 8, 3, "계단");
+					arrOffice(15, 3, 15, 3, "화학과사무실");
+					arrOffice(35, 3, 30, 3, "휴게실");
+					gotoxy(0, 21);
+					printf("특징\n");
+					printf("화학과 사무실이 있다.\n");
+					break;
+				case 4:
+					clear();
+					lineGroup(110, 20);
+					printOffice(15, 2, "엘베");
+					printOffice(3, 15, "계단");
+					printOffice(20, 15,"무기화학연구실");
+					printOffice(40, 15, "교수연구실");
+					printOffice(40, 2, "교수연구실");
+					printOffice(60, 15, "고분자연구실");
+					printOffice(85, 15, "화학과실험실");
+					printOffice(100, 10, "계단");
+					gotoxy(0, 21);
+					printf("특징\n");
+					printf("연구실,실험실이 있다.\n");
+					break;
+				case 5:
+					clear();
+					lineGroup(110, 20);
+					printOffice(10, 5, "엘베");
+					printOffice(5, 9, "화장실여");
+					printOffice(20, 15, "계단");
+					printOffice(40, 15, "교수연구실");
+					printOffice(40, 2,"교수연구실");
+					printOffice(80, 5, "계단");
+					printOffice(20, 2, "SEM연구실");
+					gotoxy(0, 21);
+					printf("특징\n");
+					printf("연구실이 있다.\n");
+					break;
+				case 6:
+					clear();
+					lineGroup(110, 20);
+					printOffice(15, 2, "수학과학생회");
+					printOffice(3, 2, "엘베");
+					printOffice(3, 15, "계단");
+					arrOffice(30, 15,50,3, "교수연구실");
+					printOffice(65, 2, "수학과사무실");
+					printOffice(95, 6, "계단");
+					printOffice(40, 2, "수학과세미나실");
+					gotoxy(0, 21);
+					printf("특징\n");
+					printf("수학과 사무실\n");
+					printf("수학과 학생회실이 있다.\n");
+					break;
+				case 7:
+					clear();
+					lineGroup(110, 16);
+					printOffice(2, 2, "엘베");
+					printOffice(2, 5, "남화장실");
+					printOffice_br(25, 2, 6, "자연과학대학교학팀");
+					arrOffice(47, 2, 35, 3, "교수님연구실");
+					printOffice_br(87, 2,3,"옥의관열람실");
+					printOffice(100, 2, "계단");
+					arrOffice(25, 10, 70, 3, "교수님연구실");
+					printOffice(5, 10, "계단");
+					gotoxy(0, 17);
+					printf("특징\n");
+					printf("자연대교학팀 사무실이 있다.\n");
+					printf("옥의관 열람실이 있다.\n");
+					break;
+				case 8:
+					clear();
+					lineGroup(110, 16);
+					printOffice(2, 2, "여휴게실");
+					printOffice_br(20, 2, 4,"전자물리교수자료실");
+					printOffice_br(35, 2, 5, "자연과학대학생회실");
+					printOffice_br(50, 2, 5, "정보콘텐츠학과사무실");
+					printOffice(65, 2, "휴게실");
+					printOffice(80, 2, "교수님 연구실");
+					printOffice(80, 10, "교수님 연구실");
+					printOffice_br(55, 10, 7, "스포츠융합과학과사무실");
+					printOffice_br(30, 10, 3, "미화원휴게실");
+					printOffice(5, 10, "계단");
+					gotoxy(0, 17);
+					printf("특징\n");
+					printf("연구실,자연대 사무실이 있다.\n");
+					break;
+				default:
+					printf("이 층에 대한 구조 계획이 없습니다.\n");
+					break;
+			}
+			printf("건물 몇층을 보고 싶습니까?(종료:0)");
+			scanf("%d", &floor);
+		}
+
 	}
 	if (strcmp(bName, "참빛관") == 0) {
 		/*각건물의 내부 구조 보여주기*/

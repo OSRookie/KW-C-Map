@@ -27,8 +27,50 @@ void printBuilding(int w, int h, char name[]) {
 	line(-w, 0);
 	line(0, -h);
 
-	gotoxy(tmpXY.X + 0.5*w, tmpXY.Y + 0.5 * h);
+	gotoxy(tmpXY.X + 0.5*w- strlen(name)/2, tmpXY.Y + 0.5 * h);
 	printf("%s", name);
+}
+
+void printAutoBuilding(int br, char name[]) {
+	COORD tmpXY = getXY();
+	int strSize = strlen(name);
+	char *first;
+	char *second;
+	if (br == 0) {
+		line(strSize + 4, 0);
+		line(0, 2);
+		line(-(strSize + 4), 0);
+		line(0, -2);
+		gotoxy(tmpXY.X + 2, tmpXY.Y +1);
+		printf("%s", name);
+	}else{
+		first = subString(0, br * 2, name);
+		second = subString(br * 2 + 1, strSize, name);
+		int first_len = strlen(first);
+		int second_len = strlen(second);
+		if (second_len > first_len) {
+			strSize = second_len;
+		}
+		else {
+			strSize = first_len;
+		}
+		line(strSize + 4, 0);
+		line(0, 3);
+		line(-(strSize + 4), 0);
+		line(0, -3);
+		
+		gotoxy(tmpXY.X + 2, tmpXY.Y + 1);
+		printf("%s", first);
+		gotoxy(tmpXY.X + 2, tmpXY.Y + 2);
+		printf("%s", second);
+	}
+}
+
+char *subString(int s, int e, char *str) {
+	char *new = (char *)malloc(e - s + 2);
+	strncpy(new, str + s, e -s+1);
+	new[e - s + 1] = 0;
+	return new;
 }
 
 void line(int x, int y) { //´ë°¢¼±x
@@ -90,6 +132,14 @@ void lineGroup(int x, int y) {
 void arrOffice(int a, int b, int c, int d, char name[]) {
 	gotoxy(a, b);
 	printBuilding(c, d, name);
+}
+void printOffice_br(int locX, int locY,int br, char name[]) {
+	gotoxy(locX, locY);
+	printAutoBuilding(br, name);
+}
+void printOffice(int locX, int locY, char name[]) {
+	gotoxy(locX, locY);
+	printAutoBuilding(0, name);
 }
 void clear() {
 	system("cls");
